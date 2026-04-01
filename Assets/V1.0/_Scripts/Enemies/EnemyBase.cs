@@ -34,9 +34,7 @@ public class EnemyBase : MonoBehaviour
         transform.position += dir * data.moveSpeed * Time.deltaTime;
 
         if (Vector3.Distance(transform.position, target.position) < 0.1f)
-        {
             waypointIndex++;
-        }
     }
 
     public void TakeDamage(float amount)
@@ -47,15 +45,14 @@ public class EnemyBase : MonoBehaviour
 
     void ReachedBase()
     {
-        // Will connect to GameManager later
-        Debug.Log("Enemy reached base");
+        GameManager.Instance.OnEnemyReachedBase();
+        WaveManager.Instance.OnEnemyRemoved();
         Destroy(gameObject);
     }
 
     void Die()
     {
-        // Will connect to reward system later
-        Debug.Log("Enemy died");
+        WaveManager.Instance.OnEnemyRemoved();
         Destroy(gameObject);
     }
 }
