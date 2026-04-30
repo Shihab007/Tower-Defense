@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c73b9409de5dce4aae1f8070831a542, type: 3}
+  m_Name: Unit_Golden_Spirit
+  m_EditorClassIdentifier: Assembly-CSharp::UnitData
+  unitName: Golden Scpirit lvl 1
+  tier: 1
+  damage: 16
+  attackSpeed: 0.8
+  range: 3.5
+  summonCost: 2
+  prefab: {fileID: 4437901575373240406, guid: 4b94f64d0a1ce714485963edacfb788e, type: 3}
+  icon: {fileID: 0}
+  unitSprite: {fileID: 21300000, guid: ff6941fc715983942952dd8d10b2643f, type: 3}
+  visualScale: {x: 0.12, y: 0.12, z: 1}
+  unitColor: {r: 1, g: 1, b: 1, a: 1}
+  nextTierUnit: {fileID: 11400000, guid: 12cc3140c3f817d479e28ace2065831e, type: 2}

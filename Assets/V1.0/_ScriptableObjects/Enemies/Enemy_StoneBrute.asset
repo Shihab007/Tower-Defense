@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3dc78a3be6d0f143a02fca5ad25eb4f, type: 3}
+  m_Name: Enemy_StoneBrute
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyData
+  enemyName: Stone Brute
+  maxHealth: 30
+  moveSpeed: 1.2
+  enemySprite: {fileID: -5616059165191495296, guid: 361ecbebd06d98244818143dbeb3a6e4, type: 3}
+  visualScale: {x: 0.23, y: 0.23, z: 1}
+  enemyColor: {r: 1, g: 1, b: 1, a: 1}
+  bobSpeed: 6
+  bobAmountY: 0.025
+  swayAmountX: 0.01
