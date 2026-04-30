@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c73b9409de5dce4aae1f8070831a542, type: 3}
   m_Name: Unit_ShadowAssassin2
   m_EditorClassIdentifier: Assembly-CSharp::UnitData
-  unitName: FlameRanger
+  unitName: Shadow Assassin lvl 2
   tier: 2
-  damage: 30
-  attackSpeed: 1.5
-  range: 3.5
+  damage: 16
+  attackSpeed: 1.7
+  range: 3.2
   summonCost: 4
   prefab: {fileID: 4437901575373240406, guid: ce1110f921cb5e14292a2cf6a83688a6, type: 3}
   icon: {fileID: 0}
