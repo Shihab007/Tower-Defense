@@ -7,9 +7,11 @@ public class UnitBase : MonoBehaviour
     public GameObject bulletPrefab;
 
     private float attackTimer = 0f;
+    private float manaTickTimer = 0f;
     private EnemyBase currentTarget;
     private SpriteRenderer spriteRenderer;
     private Transform visualTransform;
+    private SummonManager summonManager;
 
     void Awake()
     {
@@ -19,11 +21,15 @@ public class UnitBase : MonoBehaviour
             spriteRenderer = visualTransform.GetComponent<SpriteRenderer>();
         else
             spriteRenderer = GetComponent<SpriteRenderer>();
+
+        summonManager = FindFirstObjectByType<SummonManager>();
     }
 
     void Update()
     {
         if (data == null) return;
+
+        HandleManaGeneration();
 
         attackTimer += Time.deltaTime;
 
@@ -48,7 +54,6 @@ public class UnitBase : MonoBehaviour
     {
         if (data == null) return;
 
-        // Keep root scale at 1 so collider stays usable
         transform.localScale = Vector3.one;
 
         if (visualTransform != null)
@@ -63,6 +68,25 @@ public class UnitBase : MonoBehaviour
         }
     }
 
+    void HandleManaGeneration()
+    {
+        if (data == null || !data.generatesMana) return;
+        if (summonManager == null) return;
+        if (data.manaPerTick <= 0 || data.manaTickInterval <= 0f) return;
+
+        manaTickTimer += Time.deltaTime;
+
+        if (manaTickTimer >= data.manaTickInterval)
+        {
+            manaTickTimer = 0f;
+
+            if (summonManager.currentMana < summonManager.maxMana)
+            {
+                summonManager.AddMana(data.manaPerTick);
+            }
+        }
+    }
+
     void FindTarget()
     {
         EnemyBase[] enemies = FindObjectsByType<EnemyBase>(FindObjectsSortMode.None);
@@ -71,8 +95,12 @@ public class UnitBase : MonoBehaviour
 
         foreach (EnemyBase enemy in enemies)
         {
+            if (enemy == null) continue;
+
             float dist = Vector3.Distance(transform.position, enemy.transform.position);
-            if (dist <= data.range && dist < closestDistance)
+
+            // Global targeting: no range restriction
+            if (dist < closestDistance)
             {
                 closestDistance = dist;
                 currentTarget = enemy;
@@ -82,10 +110,20 @@ public class UnitBase : MonoBehaviour
 
     void Attack(EnemyBase target)
     {
-        if (bulletPrefab == null) return;
+        if (bulletPrefab == null || target == null) return;
 
         GameObject obj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         BulletBase bullet = obj.GetComponent<BulletBase>();
-        bullet.Init(target, data.damage);
+        bullet.Init(
+        target,
+        data.damage,
+        data.appliesSlow,
+        data.slowMultiplier,
+        data.slowDuration,
+        data.appliesChill,
+        data.chillPerHit,
+        data.freezeThreshold,
+        data.freezeDuration
+    );
     }
 }

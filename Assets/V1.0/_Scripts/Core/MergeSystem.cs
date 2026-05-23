@@ -7,6 +7,7 @@ public class MergeSystem : MonoBehaviour
     private bool isDragging = false;
 
     private GridManager gridManager;
+    public GameObject mergePopupPrefab;
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class MergeSystem : MonoBehaviour
         if (!isDragging) return;
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mousePos.z = 0;
+        mousePos.z = 0f;
         transform.position = mousePos;
     }
 
@@ -36,9 +37,13 @@ public class MergeSystem : MonoBehaviour
         isDragging = false;
 
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(
-            new Vector3(Input.mousePosition.x, Input.mousePosition.y,
-            Mathf.Abs(Camera.main.transform.position.z)));
-        mousePos.z = 0;
+            new Vector3(
+                Input.mousePosition.x,
+                Input.mousePosition.y,
+                Mathf.Abs(Camera.main.transform.position.z)
+            )
+        );
+        mousePos.z = 0f;
 
         GetComponent<Collider2D>().enabled = true;
 
@@ -51,25 +56,30 @@ public class MergeSystem : MonoBehaviour
 
         Vector2Int targetCell = GetCellAtPosition(mousePos);
 
+        // Invalid target
         if (targetCell.x < 0)
         {
             SnapToCell(originCell);
             return;
         }
 
+        // Same tile
         if (targetCell == originCell)
         {
             SnapToCell(originCell);
             return;
         }
 
+        // Empty tile is no longer allowed
         if (!gridManager.IsCellOccupied(targetCell.x, targetCell.y))
         {
-            MoveUnitToCell(thisUnit, originCell, targetCell);
+            SnapToCell(originCell);
             return;
         }
 
+        // Occupied tile: only allow valid merge
         UnitBase otherUnit = FindUnitAtCell(targetCell);
+
         if (otherUnit != null
             && otherUnit != thisUnit
             && otherUnit.data.unitName == thisUnit.data.unitName
@@ -80,6 +90,7 @@ public class MergeSystem : MonoBehaviour
             return;
         }
 
+        // Any other case: snap back
         SnapToCell(originCell);
     }
 
@@ -89,27 +100,41 @@ public class MergeSystem : MonoBehaviour
         transform.position = gridManager.GetCellPosition(cell.x, cell.y);
     }
 
-    void MoveUnitToCell(UnitBase unit, Vector2Int from, Vector2Int to)
-    {
-        gridManager.SetOccupied(from.x, from.y, false);
-        gridManager.SetOccupied(to.x, to.y, true);
-        unit.currentCell = to;
-        transform.position = gridManager.GetCellPosition(to.x, to.y);
-    }
-
     UnitBase FindUnitAtCell(Vector2Int cell)
     {
         Vector3 center = gridManager.GetCellPosition(cell.x, cell.y);
-        Collider2D[] hits = Physics2D.OverlapCircleAll(center, 0.45f);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(center, 0.6f);
 
         foreach (Collider2D c in hits)
         {
             if (c.gameObject == gameObject) continue;
+
             UnitBase u = c.GetComponent<UnitBase>();
-            if (u != null) return u;
+            if (u != null)
+                return u;
         }
 
         return null;
+    }
+
+    void ShowMergePopup(Vector3 position, string message)
+    {
+        if (mergePopupPrefab == null)
+        {
+            Debug.LogWarning("Merge popup prefab is not assigned.");
+            return;
+        }
+
+        Vector3 popupPos = position + new Vector3(0f, 1.5f, -2f);
+        GameObject popup = Instantiate(mergePopupPrefab, popupPos, Quaternion.identity);
+
+        Debug.Log($"Popup spawned at: {popupPos}");
+
+        FloatingText floatingText = popup.GetComponent<FloatingText>();
+        if (floatingText != null)
+        {
+            floatingText.SetText(message);
+        }
     }
 
     void MergeWith(UnitBase other, Vector2Int targetCell)
@@ -146,21 +171,38 @@ public class MergeSystem : MonoBehaviour
 
         gridManager.SetOccupied(targetCell.x, targetCell.y, true);
 
-        Debug.Log($"Merge Success: {mergedFromName} Tier {mergedFromTier} + {mergedFromName} Tier {mergedFromTier} -> {nextTier.unitName} Tier {nextTier.tier}");
+        if (MergeFeedbackUI.Instance != null)
+        {
+            MergeFeedbackUI.Instance.ShowFeedback($"Merge! T{nextTier.tier}");
+        }
 
+        // for popup
+        // ShowMergePopup(spawnPos, $"Merge! T{nextTier.tier}");
+
+        Debug.Log($"Merge Success: {mergedFromName} Tier {mergedFromTier} + {mergedFromName} Tier {mergedFromTier} -> {nextTier.unitName} Tier {nextTier.tier}");
     }
 
     Vector2Int GetCellAtPosition(Vector3 worldPos)
     {
+        float closestDistance = Mathf.Infinity;
+        Vector2Int closestCell = new Vector2Int(-1, -1);
+
         for (int x = 0; x < gridManager.columns; x++)
         {
             for (int y = 0; y < gridManager.rows; y++)
             {
-                if (Vector3.Distance(gridManager.GetCellPosition(x, y), worldPos) < 0.6f)
-                    return new Vector2Int(x, y);
+                float dist = Vector3.Distance(gridManager.GetCellPosition(x, y), worldPos);
+                if (dist < closestDistance)
+                {
+                    closestDistance = dist;
+                    closestCell = new Vector2Int(x, y);
+                }
             }
         }
 
-        return new Vector2Int(-1, -1);
+        if (closestDistance > 1.0f)
+            return new Vector2Int(-1, -1);
+
+        return closestCell;
     }
 }
