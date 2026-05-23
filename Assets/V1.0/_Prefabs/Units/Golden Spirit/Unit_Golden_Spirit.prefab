@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1043cd83c9ecc8f4fb7fd85d3566e841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnitBase
-  data: {fileID: 11400000, guid: d59918a99d743f74593a2ad79304124f, type: 2}
+  data: {fileID: 11400000, guid: 3f5a14dc7eb1a8e418a6cc657775f1c7, type: 2}
   currentCell: {x: 0, y: 0}
   bulletPrefab: {fileID: 4204567266431904249, guid: 955e7a0843b32df4199d25098e4a28a6, type: 3}
 --- !u!114 &-8702026583787588989
@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70876f4b94507244982908b370a27f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MergeSystem
+  mergePopupPrefab: {fileID: 7330152405296736978, guid: f72a05df72a483249aa293116c58d4e4, type: 3}
 --- !u!61 &8148708722812663375
 BoxCollider2D:
   m_ObjectHideFlags: 0

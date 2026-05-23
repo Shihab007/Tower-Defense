@@ -62,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70876f4b94507244982908b370a27f6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MergeSystem
+  mergePopupPrefab: {fileID: 7330152405296736978, guid: f72a05df72a483249aa293116c58d4e4, type: 3}
 --- !u!58 &-8714781286670043898
 CircleCollider2D:
   m_ObjectHideFlags: 0

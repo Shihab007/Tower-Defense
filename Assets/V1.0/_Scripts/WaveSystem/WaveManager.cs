@@ -122,10 +122,21 @@ public class WaveManager : MonoBehaviour
         enemy.Init(scaledData, waypointPath.waypoints);
     }
 
+    // public void OnEnemyRemoved()
+    // {
+    //     enemiesAlive = Mathf.Max(0, enemiesAlive - 1);
+
+    //     if (enemiesAlive <= 0 && !isSpawning)
+    //         StartCoroutine(NextWaveDelay());
+    // }
+    public void RegisterSpawnedEnemy()
+    {
+        enemiesAlive++;
+    }
+
     public void OnEnemyRemoved()
     {
-        enemiesAlive = Mathf.Max(0, enemiesAlive - 1);
-
+        enemiesAlive--;
         if (enemiesAlive <= 0 && !isSpawning)
             StartCoroutine(NextWaveDelay());
     }

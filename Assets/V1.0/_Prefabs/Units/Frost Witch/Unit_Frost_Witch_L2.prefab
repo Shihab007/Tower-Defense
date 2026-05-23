@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -8702026583787588989}
   - component: {fileID: 8148708722812663375}
   m_Layer: 0
-  m_Name: Unit_Shadow_Assassin
+  m_Name: Unit_Frost_Witch_L2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

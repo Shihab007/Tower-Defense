@@ -8,7 +8,7 @@ public class SummonManager : MonoBehaviour
     public GridManager gridManager;
 
     public int currentMana = 5;
-    public int maxMana = 10;
+    public int maxMana = 20;
     public float manaRegenRate = 1f;
 
     private float manaTimer = 0f;
@@ -37,6 +37,12 @@ public class SummonManager : MonoBehaviour
     {
         if (manaText != null)
             manaText.text = $"Mana: {currentMana}/{maxMana}";
+    }
+
+    public void AddMana(int amount)
+    {
+        currentMana = Mathf.Min(currentMana + amount, maxMana);
+        UpdateManaUI();
     }
 
     void RegenerateMana()
