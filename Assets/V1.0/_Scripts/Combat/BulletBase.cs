@@ -13,17 +13,23 @@ public class BulletBase : MonoBehaviour
     private int chillPerHit;
     private int freezeThreshold;
     private float freezeDuration;
+    private bool usesSplashDamage;
+    private float splashRadius;
+    private float splashDamageMultiplier;
 
     public void Init(
-    EnemyBase enemy,
-    float bulletDamage,
-    bool shouldSlow = false,
-    float slowMul = 1f,
-    float slowDur = 0f,
-    bool shouldApplyChill = false,
-    int chillAmount = 0,
-    int freezeAt = 0,
-    float freezeDur = 0f)
+        EnemyBase enemy,
+        float bulletDamage,
+        bool shouldSlow = false,
+        float slowMul = 1f,
+        float slowDur = 0f,
+        bool shouldApplyChill = false,
+        int chillAmount = 0,
+        int freezeAt = 0,
+        float freezeDur = 0f,
+        bool shouldSplash = false,
+        float aoeRadius = 0f,
+        float aoeDamageMultiplier = 1f)
     {
         target = enemy;
         damage = bulletDamage;
@@ -36,6 +42,10 @@ public class BulletBase : MonoBehaviour
         chillPerHit = chillAmount;
         freezeThreshold = freezeAt;
         freezeDuration = freezeDur;
+
+        usesSplashDamage = shouldSplash;
+        splashRadius = aoeRadius;
+        splashDamageMultiplier = aoeDamageMultiplier;
     }
 
     void Update()
@@ -53,14 +63,32 @@ public class BulletBase : MonoBehaviour
         if (dist <= hitDistance)
         {
             target.TakeDamage(damage);
+
             if (appliesSlow)
             {
                 target.ApplySlow(slowMultiplier, slowDuration);
             }
+
             if (appliesChill)
             {
                 target.ApplyChill(chillPerHit, freezeThreshold, freezeDuration);
             }
+
+            if (usesSplashDamage && splashRadius > 0f)
+            {
+                Collider2D[] hits = Physics2D.OverlapCircleAll(target.transform.position, splashRadius);
+
+                foreach (Collider2D hit in hits)
+                {
+                    EnemyBase nearbyEnemy = hit.GetComponent<EnemyBase>();
+
+                    if (nearbyEnemy != null && nearbyEnemy != target)
+                    {
+                        nearbyEnemy.TakeDamage(damage * splashDamageMultiplier);
+                    }
+                }
+            }
+
             Destroy(gameObject);
         }
     }

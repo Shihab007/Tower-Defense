@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -8702026583787588989}
   - component: {fileID: 8148708722812663375}
   m_Layer: 0
-  m_Name: Unit_Frost_Witch_L2
+  m_Name: Unit_Fire_Mage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1043cd83c9ecc8f4fb7fd85d3566e841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnitBase
-  data: {fileID: 11400000, guid: ee5662385018c6f488720185c5304dd5, type: 2}
+  data: {fileID: 11400000, guid: 6eb8067c5ae0e944999d60efb1b5e5d4, type: 2}
   currentCell: {x: 0, y: 0}
   bulletPrefab: {fileID: 4204567266431904249, guid: 955e7a0843b32df4199d25098e4a28a6, type: 3}
 --- !u!114 &-8702026583787588989

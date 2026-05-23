@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c73b9409de5dce4aae1f8070831a542, type: 3}
+  m_Name: Unit_FireMage
+  m_EditorClassIdentifier: Assembly-CSharp::UnitData
+  unitName: Fire Mage
+  tier: 1
+  damage: 9
+  attackSpeed: 0.85
+  range: 3
+  summonCost: 2
+  prefab: {fileID: 4437901575373240406, guid: 54abd3efa1db3c64583f7211ac831acf, type: 3}
+  icon: {fileID: 0}
+  unitSprite: {fileID: 21300000, guid: 8435d20818145024d8a7e95ccb11569f, type: 3}
+  visualScale: {x: 0.12, y: 0.12, z: 1}
+  unitColor: {r: 1, g: 1, b: 1, a: 1}
+  nextTierUnit: {fileID: 11400000, guid: be8518a5db461df45a8d91eb7786fec9, type: 2}
+  generatesMana: 0
+  manaPerTick: 0
+  manaTickInterval: 5
+  appliesSlow: 0
+  slowMultiplier: 0.65
+  slowDuration: 1.5
+  appliesChill: 0
+  chillPerHit: 1
+  freezeThreshold: 3
+  freezeDuration: 1
+  usesSplashDamage: 1
+  splashRadius: 1.2
+  splashDamageMultiplier: 0.7

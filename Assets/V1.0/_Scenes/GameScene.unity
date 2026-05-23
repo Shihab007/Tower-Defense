@@ -947,9 +947,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 880ddcc9040e24443a7bc0cc03cbfa56, type: 2}
   - {fileID: 11400000, guid: 473cd8ab425e8ff458e738cad52edf9c, type: 2}
   enemyPrefab: {fileID: 3444463731680135898, guid: 6c72d493c1bf07349bfbbbc0b4183655, type: 3}
-  baseEnemyCount: 3
-  spawnInterval: 1.5
-  timeBetweenWaves: 3
+  baseEnemyCount: 5
+  spawnInterval: 1
+  timeBetweenWaves: 2
 --- !u!1 &961996856
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,6 +983,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: d59918a99d743f74593a2ad79304124f, type: 2}
   - {fileID: 11400000, guid: 3f5a14dc7eb1a8e418a6cc657775f1c7, type: 2}
   - {fileID: 11400000, guid: 84f37f3631d408440acf2f06a9ddebb9, type: 2}
+  - {fileID: 11400000, guid: 6eb8067c5ae0e944999d60efb1b5e5d4, type: 2}
   gridManager: {fileID: 696656706}
   currentMana: 5
   maxMana: 20

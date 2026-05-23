@@ -14,9 +14,9 @@ public class WaveManager : MonoBehaviour
     public GameObject enemyPrefab;
 
     [Header("Wave Settings")]
-    public int baseEnemyCount = 3;
-    public float spawnInterval = 1.5f;
-    public float timeBetweenWaves = 3f;
+    public int baseEnemyCount = 5;
+    public float spawnInterval = 1.0f;
+    public float timeBetweenWaves = 2f;
 
     private int currentWave = 0;
     private int enemiesAlive = 0;
@@ -71,14 +71,14 @@ public class WaveManager : MonoBehaviour
         currentWave++;
         UIManager.Instance?.UpdateWave(currentWave);
 
-        int enemyCount = baseEnemyCount + (currentWave - 1) * 2;
-        float speedMultiplier = 1f + (currentWave - 1) * 0.1f;
+        int enemyCount = baseEnemyCount + (currentWave - 1) * 3;
+        float speedMultiplier = 1f + (currentWave - 1) * 0.12f;
+        float healthMultiplier = 1f + (currentWave - 1) * 0.20f;
 
-        Debug.Log($"Wave {currentWave} started. Enemies: {enemyCount}");
-        StartCoroutine(SpawnWave(enemyCount, speedMultiplier));
+        StartCoroutine(SpawnWave(enemyCount, speedMultiplier, healthMultiplier));
     }
 
-    IEnumerator SpawnWave(int count, float speedMultiplier)
+    IEnumerator SpawnWave(int count, float speedMultiplier, float healthMultiplier)
     {
         isSpawning = true;
         enemiesAlive = count;
@@ -91,7 +91,7 @@ public class WaveManager : MonoBehaviour
                 yield break;
             }
 
-            SpawnEnemy(speedMultiplier);
+            SpawnEnemy(speedMultiplier, healthMultiplier);
             yield return new WaitForSeconds(spawnInterval);
         }
 
@@ -101,7 +101,7 @@ public class WaveManager : MonoBehaviour
             StartCoroutine(NextWaveDelay());
     }
 
-    void SpawnEnemy(float speedMultiplier)
+    void SpawnEnemy(float speedMultiplier, float healthMultiplier)
     {
         GameObject obj = Instantiate(enemyPrefab);
         EnemyBase enemy = obj.GetComponent<EnemyBase>();
@@ -117,18 +117,11 @@ public class WaveManager : MonoBehaviour
         EnemyData scaledData = Instantiate(randomEnemyData);
 
         scaledData.moveSpeed *= speedMultiplier;
-        scaledData.maxHealth *= 1f + (currentWave - 1) * 0.15f;
+        scaledData.maxHealth *= healthMultiplier;
 
         enemy.Init(scaledData, waypointPath.waypoints);
     }
 
-    // public void OnEnemyRemoved()
-    // {
-    //     enemiesAlive = Mathf.Max(0, enemiesAlive - 1);
-
-    //     if (enemiesAlive <= 0 && !isSpawning)
-    //         StartCoroutine(NextWaveDelay());
-    // }
     public void RegisterSpawnedEnemy()
     {
         enemiesAlive++;
@@ -137,13 +130,13 @@ public class WaveManager : MonoBehaviour
     public void OnEnemyRemoved()
     {
         enemiesAlive--;
+
         if (enemiesAlive <= 0 && !isSpawning)
             StartCoroutine(NextWaveDelay());
     }
 
     IEnumerator NextWaveDelay()
     {
-        Debug.Log($"Wave {currentWave} cleared. Next wave in {timeBetweenWaves}s");
         yield return new WaitForSeconds(timeBetweenWaves);
 
         if (GameManager.Instance != null && GameManager.Instance.isGameOver)

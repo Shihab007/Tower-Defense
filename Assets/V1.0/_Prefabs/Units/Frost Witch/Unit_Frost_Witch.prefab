@@ -47,7 +47,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1043cd83c9ecc8f4fb7fd85d3566e841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UnitBase
-  data: {fileID: 11400000, guid: d59918a99d743f74593a2ad79304124f, type: 2}
+  data: {fileID: 11400000, guid: 84f37f3631d408440acf2f06a9ddebb9, type: 2}
   currentCell: {x: 0, y: 0}
   bulletPrefab: {fileID: 4204567266431904249, guid: 955e7a0843b32df4199d25098e4a28a6, type: 3}
 --- !u!114 &-8702026583787588989

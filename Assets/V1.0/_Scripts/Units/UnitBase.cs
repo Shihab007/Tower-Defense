@@ -123,7 +123,10 @@ public class UnitBase : MonoBehaviour
         data.appliesChill,
         data.chillPerHit,
         data.freezeThreshold,
-        data.freezeDuration
+        data.freezeDuration,
+        data.usesSplashDamage,
+        data.splashRadius,
+        data.splashDamageMultiplier
     );
     }
 }

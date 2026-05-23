@@ -32,4 +32,9 @@ public class UnitData : ScriptableObject
     public int chillPerHit = 0;
     public int freezeThreshold = 0;
     public float freezeDuration = 0f;
+
+    [Header("AoE")]
+    public bool usesSplashDamage = false;
+    public float splashRadius = 0f;
+    public float splashDamageMultiplier = 1f;
 }
