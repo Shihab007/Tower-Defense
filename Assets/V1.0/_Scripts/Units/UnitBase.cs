@@ -115,18 +115,25 @@ public class UnitBase : MonoBehaviour
         GameObject obj = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
         BulletBase bullet = obj.GetComponent<BulletBase>();
         bullet.Init(
-        target,
-        data.damage,
-        data.appliesSlow,
-        data.slowMultiplier,
-        data.slowDuration,
-        data.appliesChill,
-        data.chillPerHit,
-        data.freezeThreshold,
-        data.freezeDuration,
-        data.usesSplashDamage,
-        data.splashRadius,
-        data.splashDamageMultiplier
-    );
+            target,
+            data.damage,
+            data.appliesSlow,
+            data.slowMultiplier,
+            data.slowDuration,
+            data.appliesChill,
+            data.chillPerHit,
+            data.freezeThreshold,
+            data.freezeDuration,
+            data.usesSplashDamage,
+            data.splashRadius,
+            data.splashDamageMultiplier,
+            data.usesChainDamage,
+            data.chainCount,
+            data.chainRadius,
+            data.chainDamageMultiplier,
+            data.appliesStun,
+            data.stunChance,
+            data.stunDuration
+        );
     }
 }

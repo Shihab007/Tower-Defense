@@ -14,9 +14,9 @@ public class WaveManager : MonoBehaviour
     public GameObject enemyPrefab;
 
     [Header("Wave Settings")]
-    public int baseEnemyCount = 5;
-    public float spawnInterval = 1.0f;
-    public float timeBetweenWaves = 2f;
+    public int baseEnemyCount = 6;
+    public float spawnInterval = 0.85f;
+    public float timeBetweenWaves = 1.5f;
 
     private int currentWave = 0;
     private int enemiesAlive = 0;
@@ -71,9 +71,9 @@ public class WaveManager : MonoBehaviour
         currentWave++;
         UIManager.Instance?.UpdateWave(currentWave);
 
-        int enemyCount = baseEnemyCount + (currentWave - 1) * 3;
-        float speedMultiplier = 1f + (currentWave - 1) * 0.12f;
-        float healthMultiplier = 1f + (currentWave - 1) * 0.20f;
+        int enemyCount = baseEnemyCount + (currentWave - 1) * 4;
+        float speedMultiplier = 1f + (currentWave - 1) * 0.15f;
+        float healthMultiplier = 1f + (currentWave - 1) * 0.25f;
 
         StartCoroutine(SpawnWave(enemyCount, speedMultiplier, healthMultiplier));
     }
@@ -113,13 +113,50 @@ public class WaveManager : MonoBehaviour
             return;
         }
 
-        EnemyData randomEnemyData = enemyTypes[Random.Range(0, enemyTypes.Count)];
+        EnemyData randomEnemyData = GetEnemyForWave();
         EnemyData scaledData = Instantiate(randomEnemyData);
 
         scaledData.moveSpeed *= speedMultiplier;
         scaledData.maxHealth *= healthMultiplier;
 
         enemy.Init(scaledData, waypointPath.waypoints);
+    }
+
+    EnemyData GetEnemyForWave()
+    {
+        List<EnemyData> availablePool = new List<EnemyData>();
+
+        foreach (EnemyData enemy in enemyTypes)
+        {
+            if (enemy == null) continue;
+
+            string nameLower = enemy.enemyName.ToLower();
+
+            if (currentWave <= 2)
+            {
+                if (nameLower.Contains("runner") || nameLower.Contains("crawler"))
+                    availablePool.Add(enemy);
+            }
+            else if (currentWave <= 4)
+            {
+                if (nameLower.Contains("runner") || nameLower.Contains("crawler") || nameLower.Contains("brute"))
+                    availablePool.Add(enemy);
+            }
+            else if (currentWave <= 6)
+            {
+                if (nameLower.Contains("runner") || nameLower.Contains("crawler") || nameLower.Contains("brute") || nameLower.Contains("shield"))
+                    availablePool.Add(enemy);
+            }
+            else
+            {
+                availablePool.Add(enemy);
+            }
+        }
+
+        if (availablePool.Count == 0)
+            availablePool = enemyTypes;
+
+        return availablePool[Random.Range(0, availablePool.Count)];
     }
 
     public void RegisterSpawnedEnemy()

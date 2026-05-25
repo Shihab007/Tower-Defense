@@ -19,6 +19,7 @@ public class EnemyBase : MonoBehaviour
     private float currentSlowMultiplier = 1f;
     private int currentChillStacks = 0;
     private float freezeTimer = 0f;
+    private float stunTimer = 0f;
 
     void Awake()
     {
@@ -54,6 +55,13 @@ public class EnemyBase : MonoBehaviour
             freezeTimer = freezeDuration;
             currentChillStacks = 0;
         }
+    }
+
+    public void ApplyStun(float duration)
+    {
+        if (duration <= 0f) return;
+
+        stunTimer = Mathf.Max(stunTimer, duration);
     }
     public void InitAtPoint(EnemyData enemyData, Transform[] pathWaypoints, Vector3 spawnPosition, int startWaypointIndex)
     {
@@ -163,13 +171,21 @@ public class EnemyBase : MonoBehaviour
                 freezeTimer = 0f;
         }
 
+        if (stunTimer > 0f)
+        {
+            stunTimer -= Time.deltaTime;
+
+            if (stunTimer < 0f)
+                stunTimer = 0f;
+        }
+
         Move();
         AnimateVisual();
     }
 
     void Move()
     {
-        if (freezeTimer > 0f)
+        if (freezeTimer > 0f || stunTimer > 0f)
         {
             return;
         }

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c73b9409de5dce4aae1f8070831a542, type: 3}
+  m_Name: Unit_StoneGuardian
+  m_EditorClassIdentifier: Assembly-CSharp::UnitData
+  unitName: Stone Guardian
+  tier: 1
+  damage: 16
+  attackSpeed: 0.65
+  range: 3
+  summonCost: 2
+  prefab: {fileID: 4437901575373240406, guid: d72b5a0dffc22eb43b28205ad96b99c3, type: 3}
+  icon: {fileID: 0}
+  unitSprite: {fileID: -4959027582698936994, guid: 8457a1f983c37724d95513e3b387e348, type: 3}
+  visualScale: {x: 0.12, y: 0.12, z: 1}
+  unitColor: {r: 1, g: 1, b: 1, a: 1}
+  nextTierUnit: {fileID: 11400000, guid: 245191bc2c4f1ad44adc58df24cfee05, type: 2}
+  generatesMana: 0
+  manaPerTick: 0
+  manaTickInterval: 5
+  appliesSlow: 0
+  slowMultiplier: 0.65
+  slowDuration: 1.5
+  appliesChill: 0
+  chillPerHit: 1
+  freezeThreshold: 3
+  freezeDuration: 1
+  usesSplashDamage: 0
+  splashRadius: 1.2
+  splashDamageMultiplier: 0.7
+  usesChainDamage: 0
+  chainCount: 2
+  chainRadius: 1.6
+  chainDamageMultiplier: 0.75
+  appliesStun: 1
+  stunChance: 0.25
+  stunDuration: 0.75

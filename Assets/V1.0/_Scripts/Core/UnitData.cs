@@ -37,4 +37,15 @@ public class UnitData : ScriptableObject
     public bool usesSplashDamage = false;
     public float splashRadius = 0f;
     public float splashDamageMultiplier = 1f;
+
+    [Header("Chain")]
+    public bool usesChainDamage = false;
+    public int chainCount = 0;
+    public float chainRadius = 0f;
+    public float chainDamageMultiplier = 1f;
+
+    [Header("Stun")]
+    public bool appliesStun = false;
+    public float stunChance = 0f;
+    public float stunDuration = 0f;
 }

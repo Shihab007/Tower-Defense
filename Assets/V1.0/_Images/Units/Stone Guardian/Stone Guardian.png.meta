@@ -1,0 +1,1417 @@
+fileFormatVersion: 2
+guid: 8457a1f983c37724d95513e3b387e348
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4959027582698936994
+    second: Stone Guardian_0
+  - first:
+      213: 3885020878708611909
+    second: Stone Guardian_1
+  - first:
+      213: 1118964670823652107
+    second: Stone Guardian_2
+  - first:
+      213: 5234315415932858175
+    second: Stone Guardian_3
+  - first:
+      213: -517281741733289474
+    second: Stone Guardian_4
+  - first:
+      213: -3276019613028946515
+    second: Stone Guardian_5
+  - first:
+      213: -8683642494626130294
+    second: Stone Guardian_6
+  - first:
+      213: -688071160678800061
+    second: Stone Guardian_7
+  - first:
+      213: 4491666273633278662
+    second: Stone Guardian_8
+  - first:
+      213: -3001287108479974654
+    second: Stone Guardian_9
+  - first:
+      213: -5325772183113351459
+    second: Stone Guardian_10
+  - first:
+      213: 2704545272065037113
+    second: Stone Guardian_11
+  - first:
+      213: 278387541514898502
+    second: Stone Guardian_12
+  - first:
+      213: 8165042935088111784
+    second: Stone Guardian_13
+  - first:
+      213: 4071989087469715978
+    second: Stone Guardian_14
+  - first:
+      213: -1556609555143537574
+    second: Stone Guardian_15
+  - first:
+      213: -4311949756136323750
+    second: Stone Guardian_16
+  - first:
+      213: -2157653631017459908
+    second: Stone Guardian_17
+  - first:
+      213: -9088213568553775970
+    second: Stone Guardian_18
+  - first:
+      213: -1480855241070491322
+    second: Stone Guardian_19
+  - first:
+      213: -8589123542330750680
+    second: Stone Guardian_20
+  - first:
+      213: 1420050502985333567
+    second: Stone Guardian_21
+  - first:
+      213: -1768114524645672726
+    second: Stone Guardian_22
+  - first:
+      213: 6241385766102803716
+    second: Stone Guardian_23
+  - first:
+      213: -4128592167003469388
+    second: Stone Guardian_24
+  - first:
+      213: -2724133660374313400
+    second: Stone Guardian_25
+  - first:
+      213: 5181923103107604268
+    second: Stone Guardian_26
+  - first:
+      213: -6704078982432385743
+    second: Stone Guardian_27
+  - first:
+      213: -4991887733204299827
+    second: Stone Guardian_28
+  - first:
+      213: 3703890478945520887
+    second: Stone Guardian_29
+  - first:
+      213: -1166666330124728340
+    second: Stone Guardian_30
+  - first:
+      213: 8195236368362610404
+    second: Stone Guardian_31
+  - first:
+      213: -3295268178268320642
+    second: Stone Guardian_32
+  - first:
+      213: 3022554413468381292
+    second: Stone Guardian_33
+  - first:
+      213: 2742634973087821173
+    second: Stone Guardian_34
+  - first:
+      213: -6348048553827870966
+    second: Stone Guardian_35
+  - first:
+      213: -1503326856057989207
+    second: Stone Guardian_36
+  - first:
+      213: 1590251480464140439
+    second: Stone Guardian_37
+  - first:
+      213: 6829394754115699913
+    second: Stone Guardian_38
+  - first:
+      213: 278510324692498313
+    second: Stone Guardian_39
+  - first:
+      213: -2620261087214613268
+    second: Stone Guardian_40
+  - first:
+      213: 577820823601942222
+    second: Stone Guardian_41
+  - first:
+      213: -882120163029265132
+    second: Stone Guardian_42
+  - first:
+      213: -5493079334536150997
+    second: Stone Guardian_43
+  - first:
+      213: 3002468611255514674
+    second: Stone Guardian_44
+  - first:
+      213: -7655363246629953457
+    second: Stone Guardian_45
+  - first:
+      213: -6384938252024953679
+    second: Stone Guardian_46
+  - first:
+      213: 1856517964383624728
+    second: Stone Guardian_47
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Stone Guardian_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 1019
+        height: 1019
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e55add500befd2bb0800000000000000
+      internalID: -4959027582698936994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 895
+        width: 127
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54b176cc7ed5ae530800000000000000
+      internalID: 3885020878708611909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_2
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 945
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0bd7a8807c578f00800000000000000
+      internalID: 1118964670823652107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_3
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 932
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3f6701632604a840800000000000000
+      internalID: 5234315415932858175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_4
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 876
+        width: 191
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1213f1ffe32d8f0800000000000000
+      internalID: -517281741733289474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_5
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 933
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dad6230e48d3982d0800000000000000
+      internalID: -3276019613028946515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 927
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a869257b8218d7780800000000000000
+      internalID: -8683642494626130294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_7
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 879
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 345ac87ccea7376f0800000000000000
+      internalID: -688071160678800061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_8
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 885
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ca93819daa955e30800000000000000
+      internalID: 4491666273633278662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_9
+      rect:
+        serializedVersion: 2
+        x: 681
+        y: 887
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203871eb6494956d0800000000000000
+      internalID: -3001287108479974654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_10
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 887
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde3fd6aa6e0716b0800000000000000
+      internalID: -5325772183113351459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_11
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 865
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 933166c7899788520800000000000000
+      internalID: 2704545272065037113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_12
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 795
+        width: 45
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64cc3e97ef70dd300800000000000000
+      internalID: 278387541514898502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_13
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 866
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a06db90a4f005170800000000000000
+      internalID: 8165042935088111784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_14
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 873
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0246ef208c928830800000000000000
+      internalID: 4071989087469715978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_15
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 861
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5cc0bb5bdfc56ae0800000000000000
+      internalID: -1556609555143537574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_16
+      rect:
+        serializedVersion: 2
+        x: 950
+        y: 647
+        width: 19
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a558920ea80e824c0800000000000000
+      internalID: -4311949756136323750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_17
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 687
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3f5fde44797e02e0800000000000000
+      internalID: -2157653631017459908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_18
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 672
+        width: 25
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9c877b29ed20e180800000000000000
+      internalID: -9088213568553775970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_19
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 531
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649c7301102f27be0800000000000000
+      internalID: -1480855241070491322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_20
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 527
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8294e6735ad4dc880800000000000000
+      internalID: -8589123542330750680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_21
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 503
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3b3e81a86805b310800000000000000
+      internalID: 1420050502985333567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_22
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 197
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae8394c25356677e0800000000000000
+      internalID: -1768114524645672726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_23
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 200
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405acb6394bdd9650800000000000000
+      internalID: 6241385766102803716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_24
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 191
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b94c4f5c4b44b6c0800000000000000
+      internalID: -4128592167003469388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_25
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 194
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84654b47edee13ad0800000000000000
+      internalID: -2724133660374313400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_26
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 199
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2f5e167b93e9e740800000000000000
+      internalID: 5181923103107604268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_27
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 154
+        width: 37
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13594f96fa356f2a0800000000000000
+      internalID: -6704078982432385743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_28
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 101
+        width: 95
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcf4ab70e8049bab0800000000000000
+      internalID: -4991887733204299827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_29
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 186
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fccf7c34ccd66330800000000000000
+      internalID: 3703890478945520887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_30
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 183
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce7c18d672b2fcfe0800000000000000
+      internalID: -1166666330124728340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_31
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 181
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ee9d9a8e045bb170800000000000000
+      internalID: 8195236368362610404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_32
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 114
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7c0baa0d0bd442d0800000000000000
+      internalID: -3295268178268320642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_33
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 114
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c607211993542f920800000000000000
+      internalID: 3022554413468381292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_34
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 105
+        width: 72
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57d66771afbcf0620800000000000000
+      internalID: 2742634973087821173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_35
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 121
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a075824497337e7a0800000000000000
+      internalID: -6348048553827870966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_36
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 92
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7db5b703c132be0800000000000000
+      internalID: -1503326856057989207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_37
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 97
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 798aa94cb45b11610800000000000000
+      internalID: 1590251480464140439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_38
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 103
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c48bfd5852e6ce50800000000000000
+      internalID: 6829394754115699913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_39
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 96
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98733992aa77dd300800000000000000
+      internalID: 278510324692498313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_40
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 100
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cec4bc58c66f2abd0800000000000000
+      internalID: -2620261087214613268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_41
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 94
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece0e964af4d40800800000000000000
+      internalID: 577820823601942222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_42
+      rect:
+        serializedVersion: 2
+        x: 677
+        y: 97
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4155e69a26412c3f0800000000000000
+      internalID: -882120163029265132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_43
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 70
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b200fe5e279a4c3b0800000000000000
+      internalID: -5493079334536150997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_44
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 66
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236352f4b49eaa920800000000000000
+      internalID: 3002468611255514674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_45
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 55
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f406a02efafa2c590800000000000000
+      internalID: -7655363246629953457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_46
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 58
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b4cf371d742467a0800000000000000
+      internalID: -6384938252024953679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Stone Guardian_47
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 54
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e973a904da3c910800000000000000
+      internalID: 1856517964383624728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Stone Guardian_0: -4959027582698936994
+      Stone Guardian_1: 3885020878708611909
+      Stone Guardian_10: -5325772183113351459
+      Stone Guardian_11: 2704545272065037113
+      Stone Guardian_12: 278387541514898502
+      Stone Guardian_13: 8165042935088111784
+      Stone Guardian_14: 4071989087469715978
+      Stone Guardian_15: -1556609555143537574
+      Stone Guardian_16: -4311949756136323750
+      Stone Guardian_17: -2157653631017459908
+      Stone Guardian_18: -9088213568553775970
+      Stone Guardian_19: -1480855241070491322
+      Stone Guardian_2: 1118964670823652107
+      Stone Guardian_20: -8589123542330750680
+      Stone Guardian_21: 1420050502985333567
+      Stone Guardian_22: -1768114524645672726
+      Stone Guardian_23: 6241385766102803716
+      Stone Guardian_24: -4128592167003469388
+      Stone Guardian_25: -2724133660374313400
+      Stone Guardian_26: 5181923103107604268
+      Stone Guardian_27: -6704078982432385743
+      Stone Guardian_28: -4991887733204299827
+      Stone Guardian_29: 3703890478945520887
+      Stone Guardian_3: 5234315415932858175
+      Stone Guardian_30: -1166666330124728340
+      Stone Guardian_31: 8195236368362610404
+      Stone Guardian_32: -3295268178268320642
+      Stone Guardian_33: 3022554413468381292
+      Stone Guardian_34: 2742634973087821173
+      Stone Guardian_35: -6348048553827870966
+      Stone Guardian_36: -1503326856057989207
+      Stone Guardian_37: 1590251480464140439
+      Stone Guardian_38: 6829394754115699913
+      Stone Guardian_39: 278510324692498313
+      Stone Guardian_4: -517281741733289474
+      Stone Guardian_40: -2620261087214613268
+      Stone Guardian_41: 577820823601942222
+      Stone Guardian_42: -882120163029265132
+      Stone Guardian_43: -5493079334536150997
+      Stone Guardian_44: 3002468611255514674
+      Stone Guardian_45: -7655363246629953457
+      Stone Guardian_46: -6384938252024953679
+      Stone Guardian_47: 1856517964383624728
+      Stone Guardian_5: -3276019613028946515
+      Stone Guardian_6: -8683642494626130294
+      Stone Guardian_7: -688071160678800061
+      Stone Guardian_8: 4491666273633278662
+      Stone Guardian_9: -3001287108479974654
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
